@@ -5,10 +5,18 @@
     box-sizing: border-box;
 }
 
+/* Basisstijl voor alle pagina’s */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #f0f8ff;
     color: #333;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Zorgt ervoor dat de main-content de resterende ruimte inneemt */
 }
 
 /* Basisstijl voor headers en footers */
@@ -29,6 +37,7 @@ footer {
     color: #000;
     text-align: center;
     padding: 1.5em 0;
+    margin-top: auto; /* Zorgt ervoor dat de footer aan de onderkant blijft */
 }
 
 footer a {
