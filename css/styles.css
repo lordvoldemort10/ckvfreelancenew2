@@ -5,70 +5,84 @@
     box-sizing: border-box;
 }
 
-/* Basisstijl voor alle pagina’s */
+/* Algemene stijl voor een renaissance-uitstraling */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f0f8ff;
-    color: #333;
+    font-family: 'Georgia', serif; /* Klassiek serif-lettertype voor een elegante uitstraling */
+    background-color: #1e1b1a; /* Donkerbruine/zwartachtige achtergrondkleur voor een dramatisch contrast */
+    color: #e8e1d4; /* Zacht crème voor tekst, voor goede leesbaarheid */
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
 
-main {
-    flex: 1; /* Zorgt ervoor dat de main-content de resterende ruimte inneemt */
-}
-
-/* Basisstijl voor headers en footers */
+/* Stijl voor header en titels */
 header {
-    background-color: #add8e6;
-    color: #000;
+    background-color: #3b3a36; /* Diepgrijs om een klassiek contrast te creëren */
+    color: #e0c097; /* Goudkleurig voor een luxe uitstraling */
     padding: 2em;
     text-align: center;
+    border-bottom: 4px solid #804d3e; /* Bordeauxrode accentkleur */
 }
 
 header h1 {
-    font-size: 2.5em;
-    color: #000;
+    font-size: 3em;
+    color: #e0c097; /* Gouden tekstkleur */
 }
 
+.header-subtitle {
+    font-size: 1.2em;
+    color: #bfa982; /* Lichtere, zachte tint */
+}
+
+/* Footer stijl */
 footer {
-    background-color: #e0f7fa;
-    color: #000;
+    background-color: #3b3a36; /* Diepgrijs zoals de header */
+    color: #e8e1d4;
     text-align: center;
     padding: 1.5em 0;
-    margin-top: auto; /* Zorgt ervoor dat de footer aan de onderkant blijft */
+    margin-top: auto; /* Zorgt ervoor dat de footer altijd onderaan de pagina blijft */
+    border-top: 4px solid #804d3e; /* Bordeauxrode accentkleur */
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 footer a {
-    color: #000;
+    color: #e8e1d4;
     margin: 0 10px;
     text-decoration: none;
+    font-size: 1.3em;
+    transition: color 0.3s;
 }
 
 footer a:hover {
-    color: #555;
+    color: #e0c097; /* Hover kleur aangepast naar goudkleurig voor luxe uitstraling */
 }
 
 footer i {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
-/* ---------- Startpagina Stijlen (index.html) ---------- */
+/* Stijlen voor de startpagina */
 .hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 5em 1em;
-    background-image: url('../images/hero-background.jpg');
+    background-image: url('../images/hero-background.jpg'); /* Klassieke afbeelding als achtergrond */
     background-size: cover;
-    color: white;
+    color: #e8e1d4; /* Zachte crèmetint voor tekst */
 }
 
 .hero-title {
-    font-size: 3em;
+    font-size: 3.5em;
     margin-bottom: 0.5em;
+    text-shadow: 1px 1px 4px #000; /* Donkere schaduw voor contrast */
 }
 
 .hero-subtitle {
@@ -77,20 +91,21 @@ footer i {
 }
 
 .btn-primary {
-    background-color: #add8e6;
-    color: black;
+    background-color: #804d3e; /* Bordeauxrode knopkleur */
+    color: #e8e1d4;
     padding: 0.7em 1.5em;
     border: none;
     border-radius: 5px;
     font-size: 1em;
     transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary:hover {
-    background-color: #87ceeb;
+    background-color: #a65c43; /* Lichtere tint voor hover-effect */
 }
 
-/* ---------- Over de Docent Stijlen (about.html) ---------- */
+/* Stijlen voor Over de Docent (about.html) */
 .about-section {
     display: flex;
     flex-direction: column;
@@ -104,7 +119,7 @@ footer i {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sterkere schaduw voor een klassieke uitstraling */
 }
 
 .about-text {
@@ -113,7 +128,7 @@ footer i {
     line-height: 1.5;
 }
 
-/* ---------- Werkervaring Stijlen (experience.html) ---------- */
+/* Stijlen voor Werkervaring (experience.html) */
 .experience-section {
     padding: 3em 1em;
     display: flex;
@@ -122,24 +137,24 @@ footer i {
 }
 
 .experience-entry {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+    background-color: #2e2b28; /* Donkergrijs voor achtergrond van de kaarten */
+    border: 1px solid #bfa982; /* Gouden rand om het klassiek te maken */
     padding: 1.5em;
     margin-bottom: 1em;
     width: 80%;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .experience-entry h3 {
-    color: #333;
+    color: #e0c097;
 }
 
 .experience-entry p {
     line-height: 1.6;
 }
 
-/* ---------- Lessen Stijlen (lessons.html) ---------- */
+/* Stijlen voor Lessen (lessons.html) */
 .lesson-section {
     padding: 3em 1em;
 }
@@ -159,10 +174,10 @@ footer i {
 
 .lesson-title {
     font-size: 1.5em;
-    color: #333;
+    color: #e8e1d4;
 }
 
-/* ---------- Galerij Stijlen (gallery.html) ---------- */
+/* Stijlen voor Galerij (gallery.html) */
 .gallery-section {
     padding: 3em 1em;
 }
@@ -177,13 +192,14 @@ footer i {
     width: 100%;
     border-radius: 8px;
     transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Donkere schaduw voor klassieke diepte */
 }
 
 .gallery-item img:hover {
     transform: scale(1.05);
 }
 
-/* ---------- Contact Stijlen (contact.html) ---------- */
+/* Stijlen voor Contact (contact.html) */
 .contact-section {
     display: flex;
     flex-direction: column;
@@ -192,19 +208,20 @@ footer i {
 }
 
 .contact-form {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+    background-color: #2e2b28;
+    border: 1px solid #bfa982;
     padding: 2em;
     width: 100%;
     max-width: 500px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .contact-form label {
     font-weight: bold;
     margin-bottom: 0.5em;
     display: block;
+    color: #e8e1d4;
 }
 
 .contact-form input,
@@ -212,20 +229,23 @@ footer i {
     width: 100%;
     padding: 0.5em;
     margin-bottom: 1em;
-    border: 1px solid #ddd;
+    border: 1px solid #bfa982;
     border-radius: 5px;
+    background-color: #3b3a36;
+    color: #e8e1d4;
 }
 
 .contact-form button {
-    background-color: #add8e6;
-    color: black;
+    background-color: #804d3e;
+    color: #e8e1d4;
     padding: 0.7em 1.5em;
     border: none;
     border-radius: 5px;
     font-size: 1em;
     transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .contact-form button:hover {
-    background-color: #87ceeb;
+    background-color: #a65c43;
 }
