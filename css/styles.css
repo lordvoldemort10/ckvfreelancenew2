@@ -1,186 +1,222 @@
-/* Reset */
+/* Algemene reset en basisstijl */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Algemene stijl voor een rustige, renaissance-uitstraling */
 body {
-    font-family: 'Georgia', serif; /* Elegant en professioneel lettertype */
-    color: #3b302a;
-    background-color: #faf3e0; /* Zachte, licht beige achtergrondkleur */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
 }
 
-/* Header styling */
+/* Basisstijl voor headers en footers */
 header {
-    background-color: #e4d1a2; /* Lichte, klassieke kleur */
-    color: #3b302a;
-    padding: 2em 0;
+    background-color: #add8e6;
+    color: #000;
+    padding: 2em;
     text-align: center;
 }
 
 header h1 {
-    font-size: 3em;
-    font-family: 'Palatino', serif;
-    color: #3b302a;
+    font-size: 2.5em;
+    color: #000;
 }
 
-header p {
-    font-size: 1.2em;
-    margin-top: 0.5em;
-    color: #6b4f4f;
-}
-
-/* Custom button styles */
-.btn-custom {
-    background-color: #a58d67; /* Zachte, neutrale kleur */
-    color: white;
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.btn-custom:hover {
-    background-color: #8c7153;
-    transform: translateY(-3px);
-}
-
-/* Gallery styling */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lichte schaduw */
-    margin-bottom: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-
-/* Footer styling voor een rustige en elegante uitstraling */
 footer {
-    background-color: #f2e8dc; /* Licht beige, renaissance-stijl kleur */
-    color: #3b302a; /* Donkerbruine tekstkleur */
-    padding: 2em 0;
+    background-color: #e0f7fa;
+    color: #000;
     text-align: center;
-    font-size: 0.9em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.footer-socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+    padding: 1.5em 0;
 }
 
 footer a {
-    color: #3b302a;
-    text-decoration: none;
+    color: #000;
     margin: 0 10px;
-    transition: color 0.3s;
+    text-decoration: none;
 }
 
 footer a:hover {
-    color: #6b4f4f; /* Iets lichtere tint bij hover */
+    color: #555;
 }
 
 footer i {
-    font-size: 1.5em;
-    margin: 0 5px;
+    font-size: 1.3em;
 }
 
-.footer-text {
-    font-family: 'Georgia', serif; /* Elegant lettertype */
-}
-
-/* Hero section styling */
+/* ---------- Startpagina Stijlen (index.html) ---------- */
 .hero-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 80vh;
+    text-align: center;
+    padding: 5em 1em;
     background-image: url('../images/hero-background.jpg');
     background-size: cover;
-    background-position: center;
     color: white;
-    text-align: center;
-    flex-direction: column;
-    animation: fadeIn 1.5s ease-out;
 }
 
-.hero-section h1 {
-    font-size: 3.5em;
+.hero-title {
+    font-size: 3em;
     margin-bottom: 0.5em;
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
 }
 
-.hero-section p {
+.hero-subtitle {
     font-size: 1.5em;
-    max-width: 700px;
+    margin-bottom: 1em;
 }
 
-/* Nieuwe visuele secties met iconen */
-.section-title {
-    color: #00539C;
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 20px;
+.btn-primary {
+    background-color: #add8e6;
+    color: black;
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
 }
 
-.icon {
+.btn-primary:hover {
+    background-color: #87ceeb;
+}
+
+/* ---------- Over de Docent Stijlen (about.html) ---------- */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 1em;
+    text-align: center;
+}
+
+.about-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    max-width: 800px;
     font-size: 1.2em;
-    margin-right: 10px;
-    color: #67a6ff;
+    line-height: 1.5;
 }
 
-/* Keyframe animations */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+/* ---------- Werkervaring Stijlen (experience.html) ---------- */
+.experience-section {
+    padding: 3em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
-    }
-
-    .gallery img {
-        width: calc(50% - 10px);
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    nav a {
-        margin: 5px 0;
-    }
+.experience-entry {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em;
-    }
+.experience-entry h3 {
+    color: #333;
+}
 
-    .gallery img {
-        width: 100%;
-    }
+.experience-entry p {
+    line-height: 1.6;
+}
+
+/* ---------- Lessen Stijlen (lessons.html) ---------- */
+.lesson-section {
+    padding: 3em 1em;
+}
+
+.lesson {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.lesson-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.lesson-title {
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* ---------- Galerij Stijlen (gallery.html) ---------- */
+.gallery-section {
+    padding: 3em 1em;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- Contact Stijlen (contact.html) ---------- */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 1em;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 2em;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #add8e6;
+    color: black;
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #87ceeb;
 }
