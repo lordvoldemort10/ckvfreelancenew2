@@ -5,44 +5,45 @@
     box-sizing: border-box;
 }
 
-/* Baseline styling */
+/* Algemene stijl voor een rustige, renaissance-uitstraling */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
+    font-family: 'Georgia', serif; /* Elegant en professioneel lettertype */
+    color: #3b302a;
+    background-color: #faf3e0; /* Zachte, licht beige achtergrondkleur */
 }
 
 /* Header styling */
 header {
-    background: linear-gradient(135deg, #67a6ff, #a3d8ff);
-    color: #003366;
+    background-color: #e4d1a2; /* Lichte, klassieke kleur */
+    color: #3b302a;
     padding: 2em 0;
     text-align: center;
 }
 
 header h1 {
     font-size: 3em;
-    font-weight: bold;
-    letter-spacing: 1px;
+    font-family: 'Palatino', serif;
+    color: #3b302a;
 }
 
 header p {
     font-size: 1.2em;
     margin-top: 0.5em;
+    color: #6b4f4f;
 }
 
 /* Custom button styles */
 .btn-custom {
-    background-color: #67a6ff;
+    background-color: #a58d67; /* Zachte, neutrale kleur */
     color: white;
-    border-radius: 50px;
+    border-radius: 8px;
     padding: 10px 20px;
     font-weight: bold;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .btn-custom:hover {
-    background-color: #4a90e2;
+    background-color: #8c7153;
     transform: translateY(-3px);
 }
 
@@ -57,41 +58,56 @@ header p {
 .gallery img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lichte schaduw */
+    margin-bottom: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gallery img:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
-/* Footer styling with social icons */
+/* Footer styling voor een rustige en elegante uitstraling */
 footer {
-    background: #e6f2ff;
-    color: #003366;
-    text-align: center;
+    background-color: #f2e8dc; /* Licht beige, renaissance-stijl kleur */
+    color: #3b302a; /* Donkerbruine tekstkleur */
     padding: 2em 0;
+    text-align: center;
+    font-size: 0.9em;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    font-size: 0.9em;
+    flex-direction: column;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 footer a {
-    color: #003366;
+    color: #3b302a;
     text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
 }
 
 footer a:hover {
-    color: #67a6ff;
+    color: #6b4f4f; /* Iets lichtere tint bij hover */
 }
 
 footer i {
     font-size: 1.5em;
+    margin: 0 5px;
+}
+
+.footer-text {
+    font-family: 'Georgia', serif; /* Elegant lettertype */
 }
 
 /* Hero section styling */
@@ -120,7 +136,7 @@ footer i {
     max-width: 700px;
 }
 
-/* New section styling with icons */
+/* Nieuwe visuele secties met iconen */
 .section-title {
     color: #00539C;
     font-size: 2em;
